@@ -1,0 +1,35 @@
+{
+  "name": "ledger-agent",
+  "version": "1.0.0",
+  "description": "Grounded full-stack agent: SQL tools + RAG + MCP. Model reads; tools decide.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "seed": "node --experimental-sqlite src/db/seed.js",
+    "dev": "node --experimental-sqlite src/server.js",
+    "start": "node --experimental-sqlite src/server.js",
+    "eval": "node --experimental-sqlite evals/run.js",
+    "mcp": "node --experimental-sqlite src/mcp/server.js"
+  },
+
+  "keywords": [
+    "agentic-ai",
+    "mcp",
+    "rag",
+    "full-stack",
+    "tool-calling"
+  ],
+  "author": "Vikas Yadav",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.2",
+    "zod": "^3.24.2"
+  }
+}

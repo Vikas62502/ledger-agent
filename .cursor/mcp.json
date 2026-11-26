@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "ledger-agent": {
+      "command": "node",
+      "args": ["--experimental-sqlite", "src/mcp/server.js"],
+      "cwd": "${workspaceFolder}"
+    }
+  }
+}

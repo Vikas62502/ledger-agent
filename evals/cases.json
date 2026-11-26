@@ -1,0 +1,57 @@
+[
+  {
+    "id": "message-hit",
+    "text": "Why wasn't PhonePe Message 6821438796 credited?",
+    "expectTool": "find_by_reference_id",
+    "expectFound": true,
+    "expectAmount": 1
+  },
+  {
+    "id": "utr-hit",
+    "text": "Check UTR 826840318056",
+    "expectTool": "find_by_utr",
+    "expectFound": true
+  },
+  {
+    "id": "serial-compact",
+    "text": "Look up serial 6082680070029555",
+    "expectTool": "find_tag_serial",
+    "expectFound": true
+  },
+  {
+    "id": "vrn-related",
+    "text": "Offer / refund for RJ14AB1234?",
+    "expectTool": "find_by_vrn",
+    "expectFound": true
+  },
+  {
+    "id": "miss",
+    "text": "UTR 999999999999 never credited",
+    "expectTool": "find_by_utr",
+    "expectFound": false
+  },
+  {
+    "id": "docs-gallery",
+    "text": "Can agents use full gallery or RC only?",
+    "expectTool": "search_docs",
+    "expectDocs": true
+  },
+  {
+    "id": "tag-pending-ack",
+    "text": "Why can't I assign / issue tag 608268-007-0117503 for OTP?",
+    "expectTool": "explain_tag",
+    "expectCode": "TAG_PENDING_ACK"
+  },
+  {
+    "id": "order-partial",
+    "text": "Why is ORDER0000000001 not showing and less tags mapped?",
+    "expectTool": "explain_order",
+    "expectCode": "ORDER_PARTIAL_DISPATCH_STUCK"
+  },
+  {
+    "id": "search-logs",
+    "text": "Any error logs for ORDER0000000001?",
+    "expectTool": "search_logs",
+    "expectLogs": true
+  }
+]
